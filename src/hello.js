@@ -1,4 +1,4 @@
-module.exports.handler = async (event) => {
+const hello = async (event) => {
   return {
     statusCode: 200,
     body: JSON.stringify(
@@ -11,3 +11,7 @@ module.exports.handler = async (event) => {
     ),
   };
 };
+
+module.exports = {
+  handler : hello
+}
